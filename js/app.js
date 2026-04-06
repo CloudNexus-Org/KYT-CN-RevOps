@@ -1,7 +1,7 @@
 // AI assisted development
 /**
- * Know Your Team (CN Founder's Office) — data, search, and render.
- * Groups: Leadership, Technology (Founder's Office), Revenue Operations.
+ * Know Your Team (CN RevOps) — data, search, and render.
+ * Groups: Leadership, Technology, Revenue Operations.
  * Org chart: under CTO (Yash), Technology and Revenue Operations are parallel branches.
  */
 
@@ -17,7 +17,7 @@
       group: "Leadership",
       name: "Kaustubh Singh",
       role: "Founder & CEO",
-      department: "Founder's Office",
+      department: "RevOps",
       location: "Hyderabad",
       phone: "+91 92010 04208",
       telHref: "tel:+919201004208",
@@ -32,7 +32,7 @@
       group: "Leadership",
       name: "Yash Singh",
       role: "CTO",
-      department: "Founder's Office",
+      department: "RevOps",
       location: "Hyderabad",
       phone: "+91 90989 64288",
       telHref: "tel:+919098964288",
@@ -57,7 +57,7 @@
       group: "Technology",
       name: "Shoaib Akhtar",
       role: "Technical Head",
-      department: "Founder's Office",
+      department: "RevOps",
       location: "Hyderabad",
       phone: "+91 87705 69958",
       telHref: "tel:+918770569958",
@@ -73,7 +73,7 @@
       group: "Revenue Operations",
       name: "Aryan Patel",
       role: "RevOps",
-      department: "Founder's Office",
+      department: "RevOps",
       location: "Hyderabad",
       phone: "+91 62637 74189",
       telHref: "tel:+916263774189",
@@ -95,7 +95,7 @@
       group: "Revenue Operations",
       name: "Satyam Tiwari",
       role: "RevOps",
-      department: "Founder's Office",
+      department: "RevOps",
       location: "Hyderabad",
       phone: "+91 83054 12608",
       telHref: "tel:+918305412608",
