@@ -85,11 +85,11 @@
       doj: "20 January, 2025",
       timezone: "Full-time",
       skills: [
-        "Time management",
-        "Problem-solving",
-        "Curiosity",
-        "Ownership mindset",
-        "Revenue growth focus on effective, high-impact activity",
+        "Time Management",
+        "Problem Solving",
+        "Revenue Strategy",
+        "Process Optimization",
+        "Cross-team Coordination",
       ],
       bio:
         "I am part of the RevOps (Revenue Operations) team, where my primary focus is on solving operational challenges and driving consistent revenue growth for the company. I work closely on identifying gaps, improving processes, and ensuring smooth coordination across teams.\n\nI actively monitor monthly performance, focus on achieving sustainable growth, and ensure proper management of ongoing projects. Additionally, I contribute to securing new projects and optimizing overall business efficiency.",
