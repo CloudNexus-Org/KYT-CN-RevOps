@@ -2,7 +2,7 @@
 /**
  * Know Your Team (CN RevOps) — data, search, and render.
  * Groups: Leadership, Revenue Operations.
- * Org chart: Kaustubh → Yash → Satyam (Prachi, Shreya) & Aryan (Ritu).
+ * Org chart: Kaustubh → Yash → two cluster columns (RevOps — Satyam | RevOps — Aryan), like department boxes under CTO.
  */
 
 (function () {
@@ -171,17 +171,29 @@
         id: "yash",
         children: [
           {
-            type: "person",
-            id: "satyam-tiwari",
+            type: "cluster",
+            title: "RevOps — Satyam",
             children: [
-              { type: "person", id: "prachi-rajput", children: [] },
-              { type: "person", id: "shreya-singh-rathore", children: [] },
+              {
+                type: "person",
+                id: "satyam-tiwari",
+                children: [
+                  { type: "person", id: "prachi-rajput", children: [] },
+                  { type: "person", id: "shreya-singh-rathore", children: [] },
+                ],
+              },
             ],
           },
           {
-            type: "person",
-            id: "aryan-patel",
-            children: [{ type: "person", id: "ritu-waghmare", children: [] }],
+            type: "cluster",
+            title: "RevOps — Aryan",
+            children: [
+              {
+                type: "person",
+                id: "aryan-patel",
+                children: [{ type: "person", id: "ritu-waghmare", children: [] }],
+              },
+            ],
           },
         ],
       },
