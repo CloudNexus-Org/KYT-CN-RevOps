@@ -112,7 +112,7 @@
       ],
       bio:
         "Results-driven Business Development Associate with months of experience in driving business growth, managing client relationships, and identifying new market opportunities. Strong ability to communicate with clients, understand business needs, and deliver tailored solutions that enhance revenue and customer satisfaction.",
-      photoUrl: null,
+      photoUrl: "assets/prachi-rajput.png",
     },
     {
       id: "shreya-singh-rathore",
@@ -133,7 +133,7 @@
       ],
       bio:
         'Work as a RevOps team member, handling revenue operations and overall management, along with client handling and team & project management, ensuring everything runs smoothly.\n\nBelieve in "stay positive, work hard, make it happen."\n\nAlways like to learn and explore new things, try my best, and never give up easily.',
-      photoUrl: null,
+      photoUrl: "assets/shreya-singh-rathore.png",
     },
     {
       id: "ritu-waghmare",
