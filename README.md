@@ -99,10 +99,11 @@ The workflow copies only publishable assets into `_site` (`index.html`, `css/`, 
 
 Edit the `EMPLOYEES` array in `js/app.js`. Each person can include:
 
-- `group`: one of `Leadership`, `Technology`, `Revenue Operations` (must match `GROUP_ORDER` in the same file)  
+- `group`: one of `Leadership`, `Revenue Operations` (must match `GROUP_ORDER` in the same file)  
 - `photoUrl`: optional; if `null`, the initials placeholder is used  
+- `dob`: optional; date of birth string shown when set  
 - `skills`: array of strings (empty shows “Not listed”)  
-- `bio`: string or `null` (null shows a short placeholder message)  
+- `bio`: string or `null` (null shows a short placeholder message); use `\n` for line breaks in multi-paragraph intros  
 
 ## License
 

@@ -1,14 +1,14 @@
 // AI assisted development
 /**
  * Know Your Team (CN RevOps) — data, search, and render.
- * Groups: Leadership, Technology, Revenue Operations.
- * Org chart: under CTO (Yash), Technology and Revenue Operations are parallel branches.
+ * Groups: Leadership, Revenue Operations.
+ * Org chart: Kaustubh → Yash → Satyam (Prachi, Shreya) & Aryan (Ritu).
  */
 
 (function () {
   "use strict";
 
-  /** @typedef {{ id: string, group: string, name: string, role: string, department: string, location: string, phone: string, telHref: string, doj: string, timezone: string, skills: string[], bio: string | null, photoUrl: string | null }} Employee */
+  /** @typedef {{ id: string, group: string, name: string, role: string, department: string, location: string, phone: string, telHref: string, doj: string, timezone: string, dob?: string | null, skills: string[], bio: string | null, photoUrl: string | null }} Employee */
 
   /** @type {Employee[]} */
   const EMPLOYEES = [
@@ -17,7 +17,7 @@
       group: "Leadership",
       name: "Kaustubh Singh",
       role: "Founder & CEO",
-      department: "RevOps",
+      department: "Leadership",
       location: "Hyderabad",
       phone: "+91 92010 04208",
       telHref: "tel:+919201004208",
@@ -32,7 +32,7 @@
       group: "Leadership",
       name: "Yash Singh",
       role: "CTO",
-      department: "RevOps",
+      department: "Leadership",
       location: "Hyderabad",
       phone: "+91 90989 64288",
       telHref: "tel:+919098964288",
@@ -53,62 +53,113 @@
       photoUrl: "assets/yash-singh.png",
     },
     {
-      id: "shoaib-akhtar",
-      group: "Technology",
-      name: "Shoaib Akhtar",
-      role: "Technical Head",
-      department: "RevOps",
-      location: "Hyderabad",
-      phone: "+91 87705 69958",
-      telHref: "tel:+918770569958",
-      doj: "21 Jan 2025",
+      id: "satyam-tiwari",
+      group: "Revenue Operations",
+      name: "Satyam Tiwari",
+      role: "Revenue Operations (RevOps)",
+      department: "Revenue Operations",
+      location: "Hyderabad, Telangana",
+      phone: "+91 83054 12608",
+      telHref: "tel:+918305412608",
+      doj: "21 July, 2025",
       timezone: "Full-time",
-      skills: ["Data Engineering", "Data Science"],
+      skills: [
+        "Revenue Operations (RevOps)",
+        "Process Optimization",
+        "Data Analysis & Metrics",
+        "Pipeline & Performance Management",
+      ],
       bio:
-        "Technology leader focused on innovation, learning, and building high-performing teams.",
-      photoUrl: "assets/shoaib-akhtar.png",
+        "A driven RevOps professional focused on aligning marketing, sales, and customer success to accelerate growth. Committed to building scalable systems, optimizing processes, and leveraging data to contribute strategically to the organization's success.",
+      photoUrl: "assets/satyam-tiwari.png",
     },
     {
       id: "aryan-patel",
       group: "Revenue Operations",
       name: "Aryan Patel",
-      role: "RevOps",
-      department: "RevOps",
-      location: "Hyderabad",
+      role: "Revenue Operations (RevOps)",
+      department: "Revenue Operations",
+      location: "Bhopal, MP",
       phone: "+91 62637 74189",
       telHref: "tel:+916263774189",
-      doj: "20 Jan 2025",
+      doj: "20 January, 2025",
       timezone: "Full-time",
       skills: [
-        "Time Management",
-        "Problem Solving",
-        "Revenue Strategy",
-        "Process Optimization",
-        "Cross-team Coordination",
+        "Time management, problem-solving, curiosity, ownership mindset",
+        "Revenue growth focus on effective, high-impact activity",
       ],
       bio:
-        "Focused on solving operational challenges and driving revenue growth through process improvements and performance tracking.",
+        "I am part of the RevOps (Revenue Operations) team, where my primary focus is on solving operational challenges and driving consistent revenue growth for the company. I work closely on identifying gaps, improving processes, and ensuring smooth coordination across teams.\n\nI actively monitor monthly performance, focus on achieving sustainable growth, and ensure proper management of ongoing projects. Additionally, I contribute to securing new projects and optimizing overall business efficiency.",
       photoUrl: "assets/aryan-patel.png",
     },
     {
-      id: "satyam-tiwari",
+      id: "prachi-rajput",
       group: "Revenue Operations",
-      name: "Satyam Tiwari",
-      role: "RevOps",
-      department: "RevOps",
-      location: "Hyderabad",
-      phone: "+91 83054 12608",
-      telHref: "tel:+918305412608",
-      doj: "21 Jul 2025",
+      name: "Prachi Rajput",
+      role: "Revenue Operations (RevOps)",
+      department: "Revenue Operations",
+      location: "Bhopal, MP",
+      phone: "+91 93028 83945",
+      telHref: "tel:+919302883945",
+      doj: "14 May, 2025",
       timezone: "Full-time",
-      skills: ["RevOps", "Data Analysis", "Pipeline Management", "Process Optimization"],
+      dob: "08 May 2004",
+      skills: [
+        "Power BI — data visualization, dashboards, basic analysis",
+        "MS Excel",
+        "Lead generation, CRM, sales pipeline tracking",
+        "Market research, client communication, negotiation, presentations",
+      ],
       bio:
-        "Driven RevOps professional aligning teams and leveraging data for scalable growth.",
-      photoUrl: "assets/satyam-tiwari.png",
+        "Results-driven Business Development Associate with months of experience in driving business growth, managing client relationships, and identifying new market opportunities. Strong ability to communicate with clients, understand business needs, and deliver tailored solutions that enhance revenue and customer satisfaction.",
+      photoUrl: null,
+    },
+    {
+      id: "shreya-singh-rathore",
+      group: "Revenue Operations",
+      name: "Shreya Singh Rathore",
+      role: "Revenue Operations (RevOps)",
+      department: "Revenue Operations",
+      location: "Bhopal, MP",
+      phone: "+91 87702 79310",
+      telHref: "tel:+918770279310",
+      doj: "19 May, 2025",
+      timezone: "Full-time",
+      dob: "2 Sep 2003",
+      skills: [
+        "Lead generation, client management, process improvement for growth",
+        "Reporting, performance tracking, Excel for data handling",
+        "Market research, HR support, team management",
+      ],
+      bio:
+        'Work as a RevOps team member, handling revenue operations and overall management, along with client handling and team & project management, ensuring everything runs smoothly.\n\nBelieve in "stay positive, work hard, make it happen."\n\nAlways like to learn and explore new things, try my best, and never give up easily.',
+      photoUrl: null,
+    },
+    {
+      id: "ritu-waghmare",
+      group: "Revenue Operations",
+      name: "Ritu Waghmare",
+      role: "Revenue Operations (RevOps)",
+      department: "Revenue Operations",
+      location: "Bhopal, MP",
+      phone: "+91 79990 04564",
+      telHref: "tel:+917999004564",
+      doj: "19 May, 2025",
+      timezone: "Full-time",
+      dob: "20 Mar 2003",
+      skills: [
+        "Revenue Operations Management",
+        "Team Management",
+        "Human Resource Coordination",
+        "Problem-Solving & Decision Making",
+      ],
+      bio:
+        "I'm currently working as a RevOps, where I manage revenue operations along with key HR responsibilities and Revenue responsibilities. My role also involves handling the team and ensuring that day-to-day operations run smoothly.\n\nI enjoy taking ownership of my work and balancing multiple responsibilities effectively. I take pride in my management skills, my ability to stay organized, and to delivering quality work.",
+      photoUrl: null,
     },
   ];
 
-  const GROUP_ORDER = ["Leadership", "Technology", "Revenue Operations"];
+  const GROUP_ORDER = ["Leadership", "Revenue Operations"];
 
   /** Org tree for the chart (employee ids must exist in EMPLOYEES). */
   const ORG_TREE = {
@@ -120,17 +171,17 @@
         id: "yash",
         children: [
           {
-            type: "cluster",
-            title: "Technology",
-            children: [{ type: "person", id: "shoaib-akhtar", children: [] }],
+            type: "person",
+            id: "satyam-tiwari",
+            children: [
+              { type: "person", id: "prachi-rajput", children: [] },
+              { type: "person", id: "shreya-singh-rathore", children: [] },
+            ],
           },
           {
-            type: "cluster",
-            title: "Revenue Operations",
-            children: [
-              { type: "person", id: "aryan-patel", children: [] },
-              { type: "person", id: "satyam-tiwari", children: [] },
-            ],
+            type: "person",
+            id: "aryan-patel",
+            children: [{ type: "person", id: "ritu-waghmare", children: [] }],
           },
         ],
       },
@@ -166,6 +217,14 @@
     const div = document.createElement("div");
     div.textContent = str;
     return div.innerHTML;
+  }
+
+  /**
+   * @param {string} bio
+   * @returns {string}
+   */
+  function formatBio(bio) {
+    return escapeHtml(bio).replace(/\n/g, "<br>");
   }
 
   /**
@@ -253,7 +312,8 @@
    */
   function searchHaystack(emp) {
     const skillText = emp.skills.join(" ");
-    return [emp.name, emp.role, emp.department, emp.location, skillText].join(" ").toLowerCase();
+    const dobText = emp.dob || "";
+    return [emp.name, emp.role, emp.department, emp.location, skillText, dobText].join(" ").toLowerCase();
   }
 
   /**
@@ -299,8 +359,16 @@
            </ul>`;
 
     const bioHtml = emp.bio
-      ? `<p class="employee-card__bio">${escapeHtml(emp.bio)}</p>`
+      ? `<p class="employee-card__bio">${formatBio(emp.bio)}</p>`
       : `<p class="employee-card__bio employee-card__bio--placeholder">Professional introduction not provided yet.</p>`;
+
+    const dobRow =
+      emp.dob && emp.dob.trim()
+        ? `<div class="employee-card__meta-row">
+              <span class="employee-card__meta-label">Date of birth</span>
+              <span>${escapeHtml(emp.dob)}</span>
+            </div>`
+        : "";
 
     return `
       <article class="employee-card" id="profile-${escapeHtml(emp.id)}" data-employee-id="${escapeHtml(emp.id)}">
@@ -340,6 +408,7 @@
               <span class="employee-card__meta-label">Time zone</span>
               <span>${escapeHtml(emp.timezone)}</span>
             </div>
+            ${dobRow}
           </div>
           <div>
             <p class="employee-card__skills-title">Key skills</p>
